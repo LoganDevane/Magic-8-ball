@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpsons Magic 8-Ball</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-yellow">
+
+    <div class="container text-center py-5">
+        <h1 class="display-4 mb-4 text-danger">Simpsons Magic 8-Ball</h1>
+        <p class="lead text-white mb-4">Ask a question, and the Simpsons will give you an answer!</p>
+
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="ball-container">
+                    <div class="ball" id="ball">
+                        <p class="ball-text" id="ball-answer">Ask Homer!</p>
+                    </div>
+                    <button class="btn btn-danger mt-4" id="shake-button">
+                        Shake the 8-Ball
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+   
+    <script src="script.js"></script>
+</body>
+
+</html>

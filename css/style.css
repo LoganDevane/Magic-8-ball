@@ -1,0 +1,92 @@
+body {
+    background-size: cover;
+    font-family: 'Copperplate', fantasy;
+    background-color: #f7d000; 
+    background-image: url(https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/keyart_s35-1.jpg);
+    color: #ff00bf;
+}
+
+h1 {
+    font-family: 'Copperplate', cursive, fantasy;
+    color: #e60000; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.ball-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.ball {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    animation: rotate 3s infinite linear;
+}
+
+.ball-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff00bf;
+    margin: 0;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #ff00bf;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff0000;
+    color: #000;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Homer Simpson Styles */
+.ball::before {
+    content: "🍩";
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ball-text {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+button {
+    background-color: #ff6600; 
+}
+
+button:hover {
+    background-color: #ff00d4;
+}

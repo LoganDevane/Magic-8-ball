@@ -1,14 +1,18 @@
 body {
-    background-size: cover;
+   height: 100vh;
+    background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
     font-family: 'Copperplate', fantasy;
     background-color: #f7d000; 
     background-image: url(https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/keyart_s35-1.jpg);
-    color: #ff00bf;
+    color: #f700d6;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
 }
 
 h1 {
     font-family: 'Copperplate', cursive, fantasy;
-    color: #e60000; 
+    color: #f700d6; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -53,7 +57,7 @@ button {
 }
 
 button:hover {
-    background-color: #ff0000;
+    background-color: #ff00ea;
     color: #000;
 }
 
@@ -66,9 +70,9 @@ button:hover {
     }
 }
 
-/* Homer Simpson Styles */
+
 .ball::before {
-    content: "🍩";
+  
     font-size: 50px;
     position: absolute;
     top: 50%;
